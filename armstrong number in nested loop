@@ -1,0 +1,29 @@
+A number N is an Armstrong Number, if the sum of each digit to the power of Lis equal to N. Where L is the count of digits in N.
+
+For example if the given number N = 153,
+
+There are 3 (L3) digits in 153 are 1, 2, 3.
+
+The sum of each digit in 153 to the power of 3 is,
+
+Sum (13)+(53) +(33)=1+125 + 27 = 153
+
+The sum of each digit in 153 to the power of 3 is equal to 153.
+
+So, 153 is an Armstrong Number.
+Write a nested loop program in python
+
+a=int(input())
+for i in range(1,a+1):
+    sum=0
+    i=str(i)
+    power=len(i)
+    for j in i:
+        j=int(j)
+        sum=sum+(j**power)
+    i=int(i)
+    armst=sum==i
+    if armst:
+        print(i)
+
+
